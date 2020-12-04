@@ -7,16 +7,16 @@ static int centered = 1;		   /* -c option; centers dmenu on screen */
 static int min_width = 800;		   /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"JoyPixels:pixelsize=20:antialias=true:autohint=true",
-	"monospace:size=10"
+	"monospace:size=12",
+	"JoyPixels:pixelsize=20:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeSelHighlight] = { "#ff33ff", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+	[SchemeNorm] = { "#ff79c6", "#282a36" },
+	[SchemeSel] = { "#ffb86c", "#684a82" },
+	[SchemeSelHighlight] = { "#ff79c6", "#282a36" },
+	[SchemeNormHighlight] = { "#ffb86c", "#282a36" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l and -g options; constols number of lines and columns in grid if > 0 */
